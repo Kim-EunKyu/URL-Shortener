@@ -2,7 +2,7 @@ const shortURLinput = document.getElementById("shorturl_input");
 const shortURLbtn = document.getElementById("shorturl_btn");
 const shortURLresult = document.getElementById("shorturl_result");
 
-const ENDPOINT = "http://localhost:3000";
+const ENDPOINT = window.location.origin;
 let input = "";
 
 shortURLinput.addEventListener("change", (e) => {
