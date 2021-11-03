@@ -76,6 +76,6 @@ app.get("/", (req, res) => {
 });
 
 //-------- 서버 실행
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`server open by port 3000`);
 });
